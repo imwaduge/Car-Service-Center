@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Customer Login</title>
+    <link rel = "stylesheet" href="RegisterFormStyle.css" type="text/css">
+    <meta name="viewport" content="width=device-width , initial-scale= 1">
+</head>
+<body>
+<div class = "main">
+    <div class = "reg">
+        <h1>Login Here</h1>
+        
+        <form action="customer.php" method="GET" id="reg">
+            <label> User Name :</label>
+            <br>
+            <input type="text" name = "uname" id = "name" placeholder="Enter User Name" required>
+            <br><br>
+
+            <label>Password :</label>
+            <br>
+            <input type="password" name = "password" id = "name" placeholder="Enter Password" required>
+          
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name = "submit" id = "submit"  value ="Login" onmouseover="changeBgColor(this,'orange')" onmouseout="changeBgColor(this,'gray')">
+            <a href="Register.html" target= "_blank"><p>Register Here</p></a>
+
+            <script type="text/javascript">
+                    function changeBgColor(obj,colorName){
+
+                        obj.style.backgroundColor = colorName;
+                    }
+
+            </script>
+
+        </form>
+
+    </div>
+
+</div>
+</body>
+</html>
